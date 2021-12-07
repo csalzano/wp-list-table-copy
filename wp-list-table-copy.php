@@ -52,7 +52,8 @@ add_action( 'admin_print_footer_scripts', function() {
 
 				for( var p=0; p<content_pieces.length; p++ )
 				{
-					if( '' == content_pieces[p].trim() )
+					if( '' == content_pieces[p].trim() 
+						|| 'No description' == content_pieces[p].trim() )
 					{
 						continue;
 					}
