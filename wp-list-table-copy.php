@@ -5,6 +5,7 @@ defined( 'ABSPATH' ) or exit;
  * Plugin Name: WP List Table Copy
  * Plugin URI: https://github.com/csalzano/wp-list-table-copy
  * Description: Adds a "Copy Values" button to all WP List Tables that copies the visible contents to the clipboard so they can be pasted into a spreadsheet.
+ * Version: 1.0.0
  * Author: Corey Salzano
  * Author URI: https://breakfastco.xyz
  * Text Domain: wp-list-table-copy
