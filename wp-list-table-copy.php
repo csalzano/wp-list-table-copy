@@ -64,6 +64,19 @@ add_action( 'admin_print_footer_scripts', function() {
 						continue;
 					}
 
+					/**
+					 * The — character is shown when a term has no description
+					 * and at the beginning of child terms. Remove both.
+					 */
+					if( '—' == content_pieces[p].trim() )
+					{
+						content_pieces[p] = '';
+					}
+					else if( '— ' == content_pieces[p].trim().substr( 0, 2 ) )
+					{
+						content_pieces[p] = content_pieces[p].trim().substr( 2 );
+					}
+
 					row.push( content_pieces[p] );
 				}
 			});
